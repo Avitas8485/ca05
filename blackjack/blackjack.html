@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Dealer Demo - Pure CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hidden checkboxes for controls -->
+    <input type="checkbox" id="shuffle-control">
+    <input type="checkbox" id="deal-control">
+    
+    <!-- Hidden radio buttons for themes (only one can be selected) -->
+    <input type="radio" id="theme-classic" name="theme" checked>
+    <input type="radio" id="theme-luxury" name="theme">
+    <input type="radio" id="theme-neon" name="theme">
+
+    <!-- Theme Panel -->
+    <div class="theme-panel">
+        <h3>Themes</h3>
+        <div class="theme-buttons">
+            <label for="theme-classic" class="theme-btn">Classic</label>
+            <label for="theme-luxury" class="theme-btn">Luxury</label>
+            <label for="theme-neon" class="theme-btn">Neon</label>
+        </div>
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="control-panel">
+        <label for="shuffle-control" class="control-btn">Shuffle</label>
+        <label for="deal-control" class="control-btn">Deal</label>
+    </div>
+
+    <div class="table-container">
+        <div class="table">
+            <div class="label dealer-label">DEALER</div>
+            <div class="label player-label">PLAYER</div>
+
+            <!-- Deck with shuffle animation -->
+            <div class="deck">
+                <div class="card card-back"></div>
+                <div class="card card-back"></div>
+                <div class="card card-back"></div>
+                <div class="card card-back"></div>
+                <div class="card card-back"></div>
+            </div>
+
+            <!-- Burn card -->
+            <div class="burn-card">
+                <div class="card card-back"></div>
+            </div>
+
+            <!-- Dealer's cards -->
+            <div class="dealer-area">
+                <div class="card red">
+                    <div class="top">
+                        <div>A</div>
+                        <div>♥</div>
+                    </div>
+                    <div class="center">♥</div>
+                    <div class="bottom">
+                        <div>A</div>
+                        <div>♥</div>
+                    </div>
+                </div>
+                <div class="card black">
+                    <div class="top">
+                        <div>K</div>
+                        <div>♠</div>
+                    </div>
+                    <div class="center">♠</div>
+                    <div class="bottom">
+                        <div>K</div>
+                        <div>♠</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player's cards (with hover peek) -->
+            <div class="player-area">
+                <div class="card red">
+                    <div class="top">
+                        <div>Q</div>
+                        <div>♦</div>
+                    </div>
+                    <div class="center">♦</div>
+                    <div class="bottom">
+                        <div>Q</div>
+                        <div>♦</div>
+                    </div>
+                </div>
+                <div class="card black">
+                    <div class="top">
+                        <div>10</div>
+                        <div>♣</div>
+                    </div>
+                    <div class="center">♣</div>
+                    <div class="bottom">
+                        <div>10</div>
+                        <div>♣</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chip stacks with hover effects -->
+            <div class="chip-area">
+                <div class="chip-stack">
+                    <div class="chip chip-red">$5</div>
+                    <div class="chip-label">Red</div>
+                </div>
+                <div class="chip-stack">
+                    <div class="chip chip-blue">$10</div>
+                    <div class="chip-label">Blue</div>
+                </div>
+                <div class="chip-stack">
+                    <div class="chip chip-green">$25</div>
+                    <div class="chip-label">Green</div>
+                </div>
+                <div class="chip-stack">
+                    <div class="chip chip-black">$100</div>
+                    <div class="chip-label">Black</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
