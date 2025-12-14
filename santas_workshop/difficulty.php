@@ -292,10 +292,6 @@ $conn->close();
             <h3>✨ Game Features ✨</h3>
             <div class="feature-list">
                 <div class="feature-item">
-                    <span class="feature-icon">🎯</span>
-                    <span class="feature-text">Smart Learning AI</span>
-                </div>
-                <div class="feature-item">
                     <span class="feature-icon">🎁</span>
                     <span class="feature-text">Unlock Rewards</span>
                 </div>
@@ -314,6 +310,10 @@ $conn->close();
                 <div class="feature-item">
                     <span class="feature-icon">⭐</span>
                     <span class="feature-text">Star Ratings</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <span class="feature-text">Smart AI</span>
                 </div>
             </div>
             

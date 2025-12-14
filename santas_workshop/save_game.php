@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         INSERT INTO games (user_id, difficulty, grid_size, completion_time, moves_used, score, star_rating) 
         VALUES (?, ?, ?, ?, ?, ?, ?)
     ");
-    $stmt->bind_param("isiiii", $user_id, $difficulty, $grid_size, $completion_time, $moves, $score, $stars);
+    $stmt->bind_param("isiiiii", $user_id, $difficulty, $grid_size, $completion_time, $moves, $score, $stars);
     $stmt->execute();
     $stmt->close();
     

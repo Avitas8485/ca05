@@ -641,6 +641,13 @@ $storyTexts = [
             fetch('save_game.php', {
                 method: 'POST',
                 body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Game saved successfully:', data);
+            })
+            .catch(error => {
+                console.error('Error saving game:', error);
             });
         }
         
